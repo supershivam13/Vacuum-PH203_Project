@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PH203-ES</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
+		<br>
+		<h1 style="text-align: center;">PH203 PROJECT</h1>
+		<br>
+		<h2 style="text-align: center;">Throughput and Pumping Speed In A Vacuum Chamber</h2>
+		<br><br><br>
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form dialogG">
+				<span class="contact100-form-title">
+					Gas Equation
+				</span>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="">
+					<span class="label-input100">Moles Of Gas</span>
+					<input class="input100" type="text" name="name" placeholder="">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "">
+					<span class="label-input100">Pressure (in Pa)</span>
+					<input class="input100" type="text" name="email" placeholder="">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="">
+					<span class="label-input100">Temperature (in K)</span>
+					<input class="input100" type="text" name="name" placeholder="">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "">
+					<span class="label-input100">Time (s)</span>
+					<input class="input100" type="text" name="email" placeholder="">
+				</div>
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" onclick="gas_equation()">
+							Calculate
+						</button>
+					</div>
+				</div>
+				<br>
+				<div style="text-align: left;padding-left: 20px;">
+					<ul style="font-size: 14px;font-weight: bold;">
+					    <li>Throughput :  <span class="g1" style="color: black; font-size: 16px;" >---</span></li>
+					   <li>Pumping Speed :  <span class="g2" style="color: black; font-size: 16px;"  >---</span></li>
+					</ul>
+				 </div>
+
+			</form>
+		</div>
+		<br><br><br><br>
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form dialogS">
+				<span class="contact100-form-title">
+					Suction Chamber
+				</span>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="">
+					<span class="label-input100">Rotational Speed:</span>
+					<input class="input100" type="text" name="name" placeholder="">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "">
+					<span class="label-input100">Input Pressure (in Pa):</span>
+					<input class="input100" type="text" name="email" placeholder="">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="">
+					<span class="label-input100">Output Pressure (in Pa):</span>
+					<input class="input100" type="text" name="name" placeholder="">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "">
+					<span class="label-input100">Dead Space Volume (in m<sup>3</sup>):</span>
+					<input class="input100" type="text" name="email" placeholder="">
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "">
+					<span class="label-input100">Suction Chamber Volume (in m<sup>3</sup>):</span>
+					<input class="input100" type="text" name="email" placeholder="">
+				</div>
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" onclick="suction_chamber()">
+							Calculate
+						</button>
+					</div>
+				</div>
+ <br>
+				<div style="text-align: left;padding-left: 20px;">
+					<ul style="font-size: 14px;font-weight: bold;">
+					    <li>Throughput :  <span class="g1" style="color: black; font-size: 16px;" >---</span></li>
+					   <li>Pumping Speed :  <span class="g2" style="color: black; font-size: 16px;"  >---</span></li>
+					</ul>
+				 </div>
+
+			</form>
+		</div>
+<br><br><br>
+		<span class="contact100-more">
+				SHIVAM SAHU (1901CS55) || SHIVANSHU SANJEEV (1901CS56)
+		</span>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+
+//gas
+
+var dialogG = document.querySelector('.dialogG')
+
+function gas_equation(){
+try{
+	  var inputs = dialogG.querySelectorAll('input');
+	  if(inputs[1].value == 0) throw "Pressure can't be zero";
+	  if(inputs[3].value == 0) throw "Time can't be zero";
+	  var Q = (inputs[0].value*8.314*inputs[2].value)/inputs[3].value;
+	  var S = Q/inputs[1].value;
+	  dialogG.querySelector('.g1').textContent = Q+" W";
+	  dialogG.querySelector('.g2').textContent = S+" m3/s";
+}
+catch(err){
+	  MessageChannel.innerHTML = "Invalid Input:" + err;
+	  window.alert("Invalid Input: "+err);
+}
+}
+
+//suction
+
+var dialogS = document.querySelector('.dialogS')
+
+function suction_chamber(){
+try{
+	var inputs = dialogS.querySelectorAll('input');
+	if(inputs[1].value == 0) throw "Input Pressure can't be zero";
+	var Q = inputs[0].value*(inputs[4].value*inputs[1].value-inputs[3].value*inputs[2].value)
+	var S = Q/inputs[1].value
+	console.log(Q);
+	dialogS.querySelector('.g1').textContent = Q+" W";
+	dialogS.querySelector('.g2').textContent = S+" m3/s";
+	
+}
+catch(err){
+	MessageChannel.innerHTML = "Invalid Input:" + err;
+	window.alert("Invalid Input: "+err);
+}
+}
+
+</script>
+
+</body>
+</html>
