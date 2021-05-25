@@ -6,7 +6,9 @@ In this project, we have deployed a web application interface for the calculatio
 
 Project Live Demo - https://ph203-cs55-cs56.netlify.app/
 
+
 <p align = "center">
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/50b1648f-2ed9-4671-b912-0cf743aab7c5/deploy-status)](https://app.netlify.com/sites/throughtput-and-pumping-speed-calculator/deploys)
   
 <a href="#"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="built by developers"></a>
 ![built with love](https://forthebadge.com/images/badges/built-with-love.svg)
